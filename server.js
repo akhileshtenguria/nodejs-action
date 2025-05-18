@@ -32,6 +32,11 @@ app.get('/', (req,res)=>{
             name:"Samsung Mobile",
             price:24000
         },
+        {
+            id:1,
+            name: process.env.PORT,
+            price:1000
+        }
         
     ]
     // res.send("test");
