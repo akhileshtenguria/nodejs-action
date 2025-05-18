@@ -48,7 +48,7 @@ app.get('/', (req,res)=>{
 
 
 
-app.listen(4000, (err)=>{
+app.listen(PORT, (err)=>{
     if(err) console.log(err);
     console.log(`server running on http://localhost:4000`);
 })
