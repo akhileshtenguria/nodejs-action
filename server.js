@@ -15,7 +15,28 @@ app.get('/:title', (req,res)=>{
     console.log("home page server");
     // res.send("test");
     const title = req.params.title || "home page"
-    res.render("home", {title:title});
+    res.render("about", {title:title});
+})
+
+app.get('/', (req,res)=>{
+    console.log("home page server");
+
+    const products=[
+        {
+            id:1,
+            name:"Iphone",
+            price:23000
+        },
+        {
+            id:1,
+            name:"Samsung Mobile",
+            price:24000
+        },
+        
+    ]
+    // res.send("test");
+    const title = req.params.title || "home page"
+    res.render("home", {products:products});
 })
 
 // app.use('/v1/api/', userRoutes);
