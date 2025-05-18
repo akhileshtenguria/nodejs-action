@@ -22,7 +22,7 @@ app.get('/:title', (req,res)=>{
 
 
 
-app.listen(PORT, (err)=>{
+app.listen(4000, (err)=>{
     if(err) console.log(err);
-    console.log(`server running on http://localhost:${PORT}`);
+    console.log(`server running on http://localhost:4000`);
 })
