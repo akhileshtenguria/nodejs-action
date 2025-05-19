@@ -40,7 +40,7 @@ app.get('/', (req,res)=>{
         
     ]
     // res.send("test");
-    const title = req.params.title || "home page"
+    const title = req.params.title || "home test page"
     res.render("home", {products:products});
 })
 
